@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practise Application</string>
+    <string name="str_robinsons_supermarket">Robinsons Supermarket</string>
+    <string name="str_save_me">Save Me!</string>
+</resources>

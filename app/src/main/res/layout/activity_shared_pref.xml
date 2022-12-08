@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SharedPrefActivity">
+
+<EditText
+    android:id="@+id/etSharedPref"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_150sdp"
+    android:layout_marginStart="@dimen/_14sdp"
+    android:layout_marginEnd="@dimen/_14sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:autofillHints="Enter values for shared preferences" />
+
+    <Button
+        android:id="@+id/btnSaveMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="@string/str_save_me"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSharedPref" />
+
+<TextView
+    android:id="@+id/tvSharedPref"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="@dimen/_60sdp"
+    android:layout_marginStart="@dimen/_14sdp"
+    android:layout_marginEnd="@dimen/_14sdp"
+    android:textSize="32sp"
+    app:layout_constraintTop_toBottomOf="@id/btnSaveMe"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:text="Here we can see the saved shared preferences."/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
